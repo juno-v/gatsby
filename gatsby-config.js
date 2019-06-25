@@ -6,6 +6,6 @@
 
 module.exports = {
   plugins: [
-    'gatsby-plug-sass'
+    'gatsby-plugin-sass'
   ]
 }
