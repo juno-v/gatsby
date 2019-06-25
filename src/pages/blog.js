@@ -1,15 +1,13 @@
 import React from 'react'; 
-import Layout from "../components/"
+import Layout from "../components/layout"; 
 
 
 const BlogPage = () => {
     return (
-        <div>
-            <Header /> 
+        <Layout>
             <h1>Welcome to my blogs!</h1>
             <p> Posts will show up here later on.... </p>
-            <Footer /> 
-        </div>
+        </Layout>
     )
 }
 

@@ -1,16 +1,13 @@
 import React from 'react'; 
-import Footer from "../components/footer"; 
-import Header from "../components/header"; 
+import Layout from '../components/layout'; 
 
 
 const ContactPage = () => {
     return (
-        <div>
-            <Header /> 
+        <Layout>
             <h1> Contact Page! </h1>
             <p>This is my twitter. <a href="https://twitter.com/Juno73172572" target="blank"> @JunoVue </a></p>
-            <Footer /> 
-        </div>
+        </Layout>
 
         
         
