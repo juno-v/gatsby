@@ -12,6 +12,20 @@
     text-decoration: none; // removing underline from links default style 
 }
 
+// dashes are camcelCase referenced  in .js files example className={object.navList}
+.nav-list { 
+    display: flex; // stack items left to right
+    list-style-type: none; // removes bullet points 
+    margin: 0; // removes list margin default values 
+}
+
+.nav-item {
+    color: 999999;
+    font-size: .9rem;
+    margin-right: 1.3rem; // avoids items being jammed and tightly placed together
+    text-decoration: none; 
+}
+
 .link {
     color: #999999; 
 }
