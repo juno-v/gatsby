@@ -1,7 +1,9 @@
 import React from 'react'; 
 import { Link } from 'gatsby'; 
-import Footer from "./footer"; 
-import Header from "./header"; 
+import Layout from "./layout"
+// import Footer from "./footer"; 
+// import Header from "./header"; 
+
 
 // index.js should be utilized as the home page. 
 // a component 
