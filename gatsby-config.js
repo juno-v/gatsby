@@ -5,6 +5,10 @@
  */
 
 module.exports = {
+  siteMetaData: {
+    title: 'Full-Stack-Bootcamp',
+    author: 'Juno Vue'
+  },
   plugins: [
     'gatsby-plugin-sass'
   ]
