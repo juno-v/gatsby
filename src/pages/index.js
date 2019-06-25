@@ -11,15 +11,22 @@ import Layout from "./layout"
 const IndexPage = () => {
     // returning what is to be rendered, when this component renders 
     return (
-        <div> 
-            <Header /> 
+        <Layout>
             <h1> Welcome to my Gatbsy website! </h1>
             <h1> This is an attempt at doing Gatbsy. </h1>
             {/* Propr way to link/route to a different /url  */}
             {/* Faster user experience */}
             <p>Need a developer? <Link to="/contact">Contact me!</Link> </p>
-            <Footer /> 
-        </div>
+        </Layout>
+        // <div> 
+        //     <Header /> 
+        //     <h1> Welcome to my Gatbsy website! </h1>
+        //     <h1> This is an attempt at doing Gatbsy. </h1>
+        //     {/* Propr way to link/route to a different /url  */}
+        //     {/* Faster user experience */}
+        //     <p>Need a developer? <Link to="/contact">Contact me!</Link> </p>
+        //     <Footer /> 
+        // </div>
     )
 }
 
