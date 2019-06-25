@@ -1,16 +1,22 @@
 import React from 'react';
 import { Link } from 'gatsby'; 
-import './header.module.scss'
+// this is how to import a css module 
+// headerStyles is an object with properties (the styles in the css module)
+import headerStyles from './header.module.scss'; 
 
 const Header = () => {
     return (
-        <div>
+        <div className={headerStyles.header}>
             <header>
-                <h1> Juno Vue </h1>
+                <h1> 
+                <Link className={headerStyles.title}to="/">
+                        Juno Vue 
+                    </Link>
+                </h1>
                 <nav> 
                     <ul>
                         <li>
-                            <Link className="link" to="/"> Home </Link>
+                            <Link className={headerStyles.link} to="/"> Home </Link>
                         </li>
                         <li>
                             <Link to="/blog"> Blog </Link>

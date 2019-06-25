@@ -1,6 +1,20 @@
 // css modules enable class seletors to be locally scoped. 
 // have to individually import into .js files to utilize 
+// avoids global styles over riding each other 
+
+.header {
+    padding: 1rem 0 3rem; // put some space between header content and other things on the page 
+}
+
+.title {
+    color: #000000; 
+    font-size: 3rem; 
+    text-decoration: none; // removing underline from links default style 
+}
 
 .link {
     color: #999999; 
 }
+
+
+
