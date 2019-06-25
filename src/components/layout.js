@@ -1,6 +1,6 @@
 import React from 'react';
-import Footer from "../components/footer"; 
-import Header from "../components/header"; 
+import Footer from "./footer"; 
+import Header from "./header"; 
 
 // componentizing this to enable editing the layout of the page in one file versus having to go into every individual file and editing
 const Layout = (props) => {
