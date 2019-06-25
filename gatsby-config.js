@@ -5,8 +5,8 @@
  */
 
 module.exports = {
-  siteMetaData: {
-    title: 'Full-Stack-Bootcamp',
+  siteMetadata: {
+    title: 'Welcome to my personal site!',
     author: 'Juno Vue'
   },
   plugins: [

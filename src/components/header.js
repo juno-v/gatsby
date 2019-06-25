@@ -1,16 +1,29 @@
 import React from 'react';
-import { Link } from 'gatsby'; 
+import { Link, graphql, useStaticQuery} from 'gatsby'; 
 // this is how to import a css module 
 // headerStyles is an object with properties (the styles in the css module)
 import headerStyles from './header.module.scss'; 
 
 const Header = () => {
+
+    // synatx = tagged temperate literal 
+    // allows string to be processed by the function 
+    const data = useStaticQuery(graphql`
+        query {
+            site {
+                siteMetadata {
+                    title
+                }
+            }
+        }
+    `)
+
     return (
         <div className={headerStyles.header}>
             <header>
                 <h1> 
                 <Link className={headerStyles.title} to="/">
-                        Juno Vue 
+                        {data.site.siteMetadata.title} 
                     </Link>
                 </h1>
                 <nav> 
