@@ -1,5 +1,5 @@
 ---
-title: "My attempt GatsbyJS with Andrew Meads "The Great Gatsby Bootcamp" "
+title: "My attempt GatsbyJS with Andrew Meads Youtube Tutorial The Great Gatsby Bootcamp "
 date: "2019-06-24"
 
 ---
