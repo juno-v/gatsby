@@ -33,6 +33,10 @@ const Blog = (props) => {
     return (
         <Layout>
             <h1> {props.data.markdownRemark.frontmatter.title} </h1>
+            <p> {props.data.markdownRemark.frontmatter.date} </p>
+            {/* don't leave a space in the div elements, will cause error:
+            Can only set one of `children` or `props.dangerouslySetInnerHTML`. */}
+            <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}></div>
         </Layout>
     )
 }
