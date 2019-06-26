@@ -1,6 +1,6 @@
 import React from 'react'; 
 import Layout from "../components/layout"; 
-import { graphql, useStaticQuery} from 'gatsby'; 
+import { Link, graphql, useStaticQuery} from 'gatsby'; 
 
 
 const BlogPage = () => {
@@ -13,6 +13,9 @@ const BlogPage = () => {
                     frontmatter {
                             title
                             date
+                        }
+                        fields {
+                            slug
                         }
                     }
                 }
