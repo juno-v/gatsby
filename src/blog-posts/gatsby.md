@@ -6,6 +6,8 @@ date: "2019-06-24"
 
 I completed a 4 hour YouTube tutorial about Gatsby! 
 
+![Development photo](./photo.png)
+
 ## Topics covered 
 
 1. Gatsby
