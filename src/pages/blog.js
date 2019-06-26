@@ -31,8 +31,10 @@ const BlogPage = () => {
                 {data.allMarkdownRemark.edges.map(( blog, index ) => {
                     return (
                         <li key={index} >
-                            <h2> {blog.node.frontmatter.title} </h2>
-                            <p> {blog.node.frontmatter.date} </p>
+                            <Link to={`/blog/${blog.node.fields.slug}`} >
+                                <h2> {blog.node.frontmatter.title} </h2>
+                                <p> {blog.node.frontmatter.date} </p>
+                            </Link>
                         </li>
                     )
                 })}
