@@ -23,11 +23,20 @@
     // Returns: 'quux'
 
 
+const path = require('path'); 
+
 module.exports.onCreateNode = ({node, actions}) => {
     const { createNodeField } = actions; 
 
     if(node.internal.type === 'MarkdownRemark') {
+        const slug = path.basename(node.fileAbsolutePath, '.md'); 
     // test to see node in a readible version
-    console.log(JSON.stringify(node, undefined, 4));
+    // console.log(JSON.stringify(node, undefined, 4));
+
+        createNodeField({
+            node, 
+            name: 'slug',
+            value: slug
+        })
     }
 }
