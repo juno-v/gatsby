@@ -18,6 +18,9 @@
 
 //The path.basename() methods returns the last portion of a path, similar to the Unix basename command. 
 // Trailing directory separators are ignored, see path.sep.
+// ex) 
+    // path.basename('/foo/bar/baz/asdf/quux.html', '.html');
+    // Returns: 'quux'
 
 
 module.exports.onCreateNode = ({node, actions}) => {
