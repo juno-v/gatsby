@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import { graphql } from 'gatsby'; 
 import Layout from "../components/layout";
-
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer'; 
 
 /* notes about createPage below */
 // Tell plugins to add pages. This extension point is called only after the initial sourcing and 
@@ -38,6 +38,9 @@ export const query = graphql`
         contentfulBlogPost(slug: {eq: $slug}) {
             title
             publishedDate(formatString: "MMMM, Do, YYY")
+            body {
+                json
+            }
         }
     }
 `
@@ -58,6 +61,7 @@ const Blog = (props) => {
 
             <h1>{props.data.contentfulBlogPost.title} </h1>
             <p> {props.data.contentfulBlogPost.publishedDate} </p>
+            {documentToReactComponents(props.data.contentfulBlogPost.body.json)}
 
         </Layout>
     )
