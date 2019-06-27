@@ -18,7 +18,7 @@ const BlogPage = () => {
               title
               slug
               publishedDate (
-                formatString:"MMM Do, YYYY"
+                formatString:"MMMM Do, YYYY"
               )
             }
           }
