@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link, graphql, useStaticQuery} from 'gatsby'; 
+import { Link} from 'gatsby'; 
+import gatsbyImg from "./gatsby.png"
 // this is how to import a css module 
 // headerStyles is an object with properties (the styles in the css module)
 import headerStyles from './header.module.scss'; 
@@ -8,25 +9,21 @@ const Header = () => {
 
     // synatx = tagged temperate literal 
     // allows string to be processed by the function 
-    const data = useStaticQuery(graphql`
-        query {
-            site {
-                siteMetadata {
-                    title,
-                    author
-                }
-            }
-        }
-    `)
+    // const data = useStaticQuery(graphql`
+    //     query {
+    //         site {
+    //             siteMetadata {
+    //                 title,
+    //                 author
+    //             }
+    //         }
+    //     }
+    // `)
 
     return (
         <div className={headerStyles.header}>
             <header>
-                <h1> 
-                <Link className={headerStyles.title} to="/">
-                        {data.site.siteMetadata.title} 
-                </Link>
-                </h1>
+                <img src={gatsbyImg} alt="GatsbyJs" /> 
                 <nav> 
                     <ul className={headerStyles.navList}>
                         <li>
