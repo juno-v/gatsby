@@ -46,6 +46,19 @@ export const query = graphql`
 `
 
 const Blog = (props) => {
+
+    // variabl to render the photos(assets) from Contentful 
+    const options = {
+        renderNode: {
+            "embedded-asset-block": (node) => {
+                const alt = node.data.target.fields.title['en-US'];
+                const url = node.data.target.fields.file['en-US'].url;
+
+                return <img alt={alt} src={url} /> 
+            }
+        }
+    }
+
     return (
         <Layout>
             {/* this is the code to utilize mark down files */}
@@ -61,7 +74,7 @@ const Blog = (props) => {
 
             <h1>{props.data.contentfulBlogPost.title} </h1>
             <p> {props.data.contentfulBlogPost.publishedDate} </p>
-            {documentToReactComponents(props.data.contentfulBlogPost.body.json)}
+            {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
 
         </Layout>
     )
