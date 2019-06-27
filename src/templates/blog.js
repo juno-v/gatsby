@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import { graphql } from 'gatsby'; 
 import Layout from "../components/layout";
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'; 
+import Head from "../components/head"; 
 
 /* notes about createPage below */
 // Tell plugins to add pages. This extension point is called only after the initial sourcing and 
@@ -61,6 +62,7 @@ const Blog = (props) => {
 
     return (
         <Layout>
+            <Head title={props.data.contentfulBlogPost.title} /> 
             {/* this is the code to utilize mark down files */}
 
             {/* <h1> {props.data.markdownRemark.frontmatter.title} </h1>
