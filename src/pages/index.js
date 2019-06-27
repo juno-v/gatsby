@@ -13,10 +13,11 @@ const IndexPage = () => {
         <Layout>
             <Head title="Home" /> 
             <h1> Welcome to my Gatbsy website! </h1>
-            <h1> This is an attempt at doing Gatbsy. </h1>
-            {/* Propr way to link/route to a different /url  */}
-            {/* Faster user experience */}
-            <p>Need a developer? <Link to="/contact">Contact me!</Link> </p>
+            <p> This is a website in which I have blogs about GatsbyJS. It's a part of a tutorial that I followed 
+                <a href="https://www.youtube.com/watch?v=8t0vNu2fCCM&t=4122s"
+                target="blank"
+                >  here </a> 
+            </p>
         </Layout>
     )
 }
