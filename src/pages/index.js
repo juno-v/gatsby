@@ -1,7 +1,7 @@
 import React from 'react'; 
 import { Link } from 'gatsby'; 
 import Layout from "../components/layout"
-
+import Head from "../components/head"; 
 
 
 // index.js should be utilized as the home page. 
@@ -11,6 +11,7 @@ const IndexPage = () => {
     // returning what is to be rendered, when this component renders 
     return (
         <Layout>
+            <Head /> 
             <h1> Welcome to my Gatbsy website! </h1>
             <h1> This is an attempt at doing Gatbsy. </h1>
             {/* Propr way to link/route to a different /url  */}
