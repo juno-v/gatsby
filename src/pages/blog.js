@@ -31,12 +31,12 @@ const BlogPage = () => {
             <h1>Welcome to my blogs!</h1>
 
             <ol className={blogStyles.posts}>
-                {data.allMarkdownRemark.edges.map(( blog, index ) => {
+                {data.allContentfulBlogPost.edges.map(( blog, index ) => {
                     return (
                         <li className={blogStyles.post} key={index} >
-                            <Link to={`/blog/${blog.node.fields.slug}`} >
-                                <h2> {blog.node.frontmatter.title} </h2>
-                                <p> {blog.node.frontmatter.date} </p>
+                            <Link to={`/blog/${blog.node.slug}`} >
+                                <h2> {blog.node.title} </h2>
+                                <p> {blog.node.publishedDate} </p>
                             </Link>
                         </li>
                     )
