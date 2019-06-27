@@ -49,6 +49,34 @@ module.exports.createPages = async ({graphql, actions}) => {
     // get markdown data
     const response = await graphql(`
         query {
+            allContentfulBlogPost {
+                edges {
+                    node {
+                        slug
+                    }
+                }
+            }
+        }
+    `)
+    // create new pages
+    response.data.allContentfulBlogPost.edges.forEach((edge) => {
+        createPage({
+            component: blogTemplate,
+            path: `/blog/${edge.node.slug}`,
+            context: {
+                slug: edge.node.slug
+            }
+        })
+    }) 
+}
+
+
+
+
+/* 
+this is the query for mark down files.
+replace query in line 51 to render mark down files instead of Contentful data
+query {
             allMarkdownRemark {
                 edges {
                     node {
@@ -59,9 +87,10 @@ module.exports.createPages = async ({graphql, actions}) => {
                 }
             }
         }
-    `)
-    // create new pages
-    response.data.allMarkdownRemark.edges.forEach((edge) => {
+
+this is the slug for mark down files
+replace line 62 with this in order to utilize markdown files 
+response.data.allMarkdownRemark.edges.forEach((edge) => {
         createPage({
             component: blogTemplate,
             path: `/blog/${edge.node.fields.slug}`,
@@ -70,4 +99,4 @@ module.exports.createPages = async ({graphql, actions}) => {
             }
         })
     }) 
-}
+*/
