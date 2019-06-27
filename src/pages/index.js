@@ -11,7 +11,7 @@ const IndexPage = () => {
     // returning what is to be rendered, when this component renders 
     return (
         <Layout>
-            <Head /> 
+            <Head title="Home" /> 
             <h1> Welcome to my Gatbsy website! </h1>
             <h1> This is an attempt at doing Gatbsy. </h1>
             {/* Propr way to link/route to a different /url  */}
