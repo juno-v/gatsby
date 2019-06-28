@@ -6,7 +6,7 @@ import gatsby from "./images/gatsby.png"
 import graphQL from "./images/graphQL.jpeg"
 import contentful from "./images/contentful.png"; 
 import netfliy from "./images/netlify.jpeg"; 
-import Andrew from "./images/AndrewMead.jpg"
+import Andrew from "./images/AndrewMead.png"
 
 
 // index.js should be utilized as the home page. 
