@@ -31,7 +31,7 @@ const BlogPage = () => {
     return (
         <Layout>
           <Head title="Blog" />
-            <h1>Welcome to my blogs!</h1>
+            <h1>Welcome to my blogs about GatsbyJS!</h1>
 
             <ol className={blogStyles.posts}>
                 {data.allContentfulBlogPost.edges.map(( blog, index ) => {
