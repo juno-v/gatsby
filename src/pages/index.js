@@ -1,8 +1,13 @@
 import React from 'react'; 
 import Layout from "../components/layout"; 
 import Head from "../components/head"; 
-import Andrew from "./images/AndrewMead.jpg"
 import indexStyles from "./index.module.scss"; 
+import gatsby from "./images/gatsby.png"
+import graphQL from "./images/graphQL.jpeg"
+import contentful from "./images/contentful.png"; 
+import netfliy from "./images/netlify.jpeg"; 
+import Andrew from "./images/AndrewMead.jpg"
+
 
 // index.js should be utilized as the home page. 
 // a component 
@@ -16,10 +21,10 @@ const IndexPage = () => {
             <h2> This is a website that I've created using: </h2>
                 
                     <ul>
-                        <li> GatsbyJS </li> 
-                        <li> GraphQL </li>
-                        <li> Contentful </li>
-                        <li> Netlify </li>
+                        <li> GatsbyJS </li> <img src={gatsby} alt="gatsby icon" />
+                        <li> GraphQL </li> <img src={graphQL} alt="graphQl icon" /> 
+                        <li> Contentful </li> <img src={contentful} alt="contentful icon" /> 
+                        <li> Netlify </li> <img src={netfliy} alt="netfliy icon" /> 
                     </ul>
                 
                 <p> I followed along Andrew Mead's  
