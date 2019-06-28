@@ -20,11 +20,11 @@ const IndexPage = () => {
             <h1> Welcome to the Gatsby Blogs! </h1>
             <h2> This is a website that I've created using: </h2>
                 
-                    <ul>
-                        <li> GatsbyJS </li> <img className={indexStyles.imgs} src={gatsby} alt="gatsby icon" />
-                        <li> GraphQL </li> <img className={indexStyles.imgs} src={graphQL} alt="graphQl icon" /> 
-                        <li> Contentful </li> <img className={indexStyles.imgs} src={contentful} alt="contentful icon" /> 
-                        <li> Netlify </li> <img className={indexStyles.imgs} src={netfliy} alt="netfliy icon" /> 
+                    <ul className={indexStyles.ul} >
+                        <img className={indexStyles.imgs} src={gatsby} alt="gatsby icon" /> <li> GatsbyJS</li>  <br/>
+                        <img className={indexStyles.imgs} src={graphQL} alt="graphQl icon" /> <li> GraphQL </li>  <br/>
+                        <img className={indexStyles.imgs} src={contentful} alt="contentful icon" /> <li> Contentful </li> <br/>
+                        <img className={indexStyles.imgs} src={netfliy} alt="netfliy icon" /> <li> Netlify </li> <br/>
                     </ul>
                 
                 <p> I followed along Andrew Mead's  

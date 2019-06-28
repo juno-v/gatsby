@@ -6,4 +6,13 @@
     border-radius: 50%;
     height: 50px; 
     width: 50px; 
+    vertical-align: middle;
+}
+
+.ul {
+    li {
+        margin-left: 0px auto;
+        padding-left: 0px;
+        display: inline-block;
+    }
 }
