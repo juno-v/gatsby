@@ -13,7 +13,7 @@ const AboutPage = () => {
                 I also make my Github repos public so others can view them. 
                 There are comments in my repos for others to read through to give them an easier understanding of my code.
             </p>
-            <p> <Link to="contact"> Want to work with me? Reach out!</Link></p>
+            <p> Want to work with me? Read my <Link to="contact"> contact page </Link> and reach out! </p>
         </Layout>
     )
 }
