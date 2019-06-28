@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import Layout from "../components/layout"; 
 import Head from "../components/head"; 
 import Andrew from "./images/AndrewMead.jpg"
+import indexStyles from "./index.module.scss"; 
 
 // index.js should be utilized as the home page. 
 // a component 
@@ -27,7 +28,10 @@ const IndexPage = () => {
                     target="blank"
                     >  The Great Gatsby Bootcamp [Full Tutorial] </a>  
                 </p>
-                <img src={Andrew} atl="Andrew Mead"/>
+                <img 
+                className={indexStyles.andrewImg}
+                src={Andrew} 
+                atl="Andrew Mead"/>
                 <p> Check out my Blog section to read what I think about Gatsby and my experience with Mead's tutorial. </p>
         </Layout>
     )
