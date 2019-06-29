@@ -27,10 +27,10 @@ const IndexPage = () => {
                         <img className={indexStyles.imgs} src={netfliy} alt="netfliy icon" /> <li> Netlify </li> <br/>
                     </ul>
                 
-                <p> I followed along Andrew Mead's  
+                <p> I followed along Andrew Mead's tutorial to make this website. <br/>
                     <a href="https://www.youtube.com/watch?v=8t0vNu2fCCM&t=4122s"
                     target="blank"
-                    >  The Great Gatsby Bootcamp [Full Tutorial] </a>  
+                    >  The Great Gatsby Bootcamp </a>  
                 </p>
                 <img 
                 className={indexStyles.andrewImg}
