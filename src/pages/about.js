@@ -13,7 +13,7 @@ const AboutPage = () => {
             <ul>
                 <li> I like to try new technologies through tutorials and research. </li>
                 <li>  I typically deploy my applications onto a website where people are able to demo the application.  </li>
-                <li>  I also make my Github repos public so others can view them.  </li>
+                <li>  I also make my <a href="https://github.com/jvue96" target="blank"> Github </a> repos public so others can view them.  </li>
                 <li> There are comments in my repos for others to read through to give them an easier understanding of my code. </li>
             </ul>
             <p> Want to work with me? Read my <Link to="contact"> contact page </Link> and reach out! </p>
