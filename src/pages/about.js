@@ -9,7 +9,11 @@ const AboutPage = () => {
     return (
         <Layout>
             <Head title="About" />
-            <p> Hello world! Thank you for stopping by the website. My name is Juno. </p>
+                <div className={aboutStyles.helloWorldDiv} >
+                    <h1> Hello World </h1>
+                </div>
+
+            <p> Thank you for stopping by the website. My name is Juno. </p>
             <p> Here's a little bit about me: </p>
             <ul className={aboutStyles.ul} >
                 <li> I like to try new technologies through tutorials and research. </li>
