@@ -18,7 +18,7 @@ const IndexPage = () => {
         <Layout>
             <Head title="Home" /> 
             <h1> Welcome to the Gatsby Blogs! </h1>
-            <h2> This is a website that I've created using: </h2>
+            <h2> This is a website that was created using: </h2>
                 
                     <ul className={indexStyles.ul} >
                         <img className={indexStyles.imgs} src={gatsby} alt="gatsby icon" /> <li> GatsbyJS</li>  <br/>
@@ -27,7 +27,7 @@ const IndexPage = () => {
                         <img className={indexStyles.imgs} src={netfliy} alt="netfliy icon" /> <li> Netlify </li> <br/>
                     </ul>
                 
-                <p> I followed along Andrew Mead's tutorial to make this website. <br/>
+                <p>  It was created using Andrew Mead's tutorial <br/>
                     <a href="https://www.youtube.com/watch?v=8t0vNu2fCCM&t=4122s"
                     target="blank"
                     >  The Great Gatsby Bootcamp </a>  
@@ -36,7 +36,7 @@ const IndexPage = () => {
                 className={indexStyles.andrewImg}
                 src={Andrew} 
                 alt="Andrew Mead"/>
-                <p> Check out my Blog section to read what I think about Gatsby and my experience with Mead's tutorial. </p>
+                <p> Check out the Blog section to read what I think about Gatsby and my experience with Mead's tutorial. </p>
         </Layout>
     )
 }
