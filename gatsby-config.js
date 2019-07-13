@@ -4,8 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  * this is a node.js file hence the module.exports 
  */
-
-const dotenv = require("dotenv").config();
+require('dotenv').config()
 
 module.exports = {
   siteMetadata: {
