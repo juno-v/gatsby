@@ -5,6 +5,8 @@
  * this is a node.js file hence the module.exports 
  */
 
+const dotenv = require("dotenv").config();
+
 module.exports = {
   siteMetadata: {
     title: 'Welcome to my personal site!',
