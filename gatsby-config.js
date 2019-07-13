@@ -5,7 +5,7 @@
  * this is a node.js file hence the module.exports 
  */
 
-// const dotenv = require("dotenv").config();
+const dotenv = require("dotenv").config();
 
 module.exports = {
   siteMetadata: {
