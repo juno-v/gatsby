@@ -20,7 +20,7 @@ https://angry-bassi-7e8f67.netlify.com/
 - GatsbyJS 
 - GraphQL 
 - Contentful 
-- Netlify 
+- Netlify <br/>
 *check package-lock and gatsby-node.js files for other dependencies/plugins*
 
 # Prerequisites
@@ -38,8 +38,8 @@ https://angry-bassi-7e8f67.netlify.com/
 2. Create an account with Contentful and Netfliy with your Github credentials. 
     - Contentful (https://www.contentful.com/) 
     - Netlify (https://www.netlify.com/)
-3. In your .env file, insert the following: *this is needed to connect to the Contentful data*
-- GATSBY_GRAPHQL_IDE=playground *this is to use the playground version of GraphQL*
+3. In your .env file, insert the following: (*this is needed to connect to the Contentful data*)
+- GATSBY_GRAPHQL_IDE=playground (*this is to use the playground version of GraphQL*)
 - CONTENTFUL_SPACE_ID=yourCredentials  
 - CONTENFUL_ACCESS_TOKEN=yourCredentials
 
@@ -53,9 +53,10 @@ https://angry-bassi-7e8f67.netlify.com/
   in your terminal run `gatsby develop`
   ```
 # Open the source code and start editing
-    Your site is now running at `http://localhost:8000`!
-
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+Your site is now running at http://localhost:8000<br/>
+- Note: You'll also see a second link: http://localhost:8000/___graphql 
+  - (*This is a tool you can use to experiment with querying your data. 
+  <br/> Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)*)
 
 # Completed features listed below 
 - Able to switch between navigation tabs seamlessly 
