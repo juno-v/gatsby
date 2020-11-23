@@ -71,14 +71,6 @@ Your site is now running at http://localhost:8000<br/>
 - Add more blogs to share resources about GatsbyJS 
 - Try integrating GatsbyJS with other CMS 
 
-# Notes for employers 
-- What was exciting about this project? 
-  - I am a big fan of React. Once I found time to learn GatsbyJS through Andrew Mead's tutorial, I couldn't put it down. It was addicting to just build quickly and learn this React framework. After finishing the tutorial, I researched more into why others are interested in Gatsby, and why others have moved to Gatsby from other static site builders. I wrote about my findings in the live demo of this project. The most exciting thing about this project is that this is my first experience with integrating a Content Management System. It's a huge plus that I'm familiar with the framework. I can now use Gatsby to create websites for non-developers. Although Gatsby isn't huge at this point in time, it still has a big community within React developers and I'm excited to learn with, from, and inform others of Gatsby. 
-
-- Personal touches that were added
-  - I'm currently working on a new design layout that's different from the tutorial. But I've been adding relevent blogs posts to Gatsby to help inform others of resources that I've found helpful for myself. It includes references to other blogs, websites, tutorials, personal experience/opinions, etc. 
-  - I've listed my contact information so other people who are interested in Gatsby can join my development community and learn with us. 
-
 ## 🧐 What's inside?
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
